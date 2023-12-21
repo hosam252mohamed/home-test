@@ -37,6 +37,7 @@ aside.sidebar {
   align-items: center;
   z-index: 999;
   transition: 0.5s;
+  height: 100vh;
 }
 .homepage .bars {
   position: absolute;
