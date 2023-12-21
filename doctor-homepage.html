@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Login</title>
+    <link rel="stylesheet" href="styles/doc-homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/all.min.css">
+  </head>
+
+  <body>
+    <div class="homepage">
+      <i class="fa-solid fa-bars bars"></i>
+      <aside class="sidebar">
+        <a href="#"><img src="imgs/doctor-logo.png" alt=""></a>
+        <ul class="props">
+          <li><a href="#" class="active"><i class="fa-solid fa-house"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+        <div class="logout">
+          <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+      </aside>
+      <div class="content">
+        <p class="greeting">Welcome, <span>Dr. Hooda</span></p>
+        <div class="appointment-calender">
+          <div class="box appointed">
+            <div class="left">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <div class="right">
+              <h3>appointments</h3>
+              <span class="number">09</span>
+            </div>
+          </div>
+          <div class="box cancelled">
+            <div class="left">
+              <i class="fa-solid fa-rectangle-xmark"></i>
+            </div>
+            <div class="right">
+              <h3>Cancelled</h3>
+              <span class="number">02</span>
+            </div>
+          </div>
+        </div>
+        <div class="appointments">
+          <h2>Appointments</h2>
+          <div class="patient">
+            <img src="imgs/patient-test.png" alt="">
+            <h3>Ahmed Mohsen</h3>
+            <span>On going</span>
+          </div>
+          <div class="patient">
+            <img src="imgs/patient-test.png" alt="">
+            <h3>Ahmed Mohsen</h3>
+            <span>On going</span>
+          </div>
+          <div class="patient">
+            <img src="imgs/patient-test.png" alt="">
+            <h3>Ahmed Mohsen</h3>
+            <span>On going</span>
+          </div>
+          <div class="patient">
+            <img src="imgs/patient-test.png" alt="">
+            <h3>Ahmed Mohsen</h3>
+            <span>On going</span>
+          </div>
+          <div class="patient">
+            <img src="imgs/patient-test.png" alt="">
+            <h3>Ahmed Mohsen</h3>
+            <span>On going</span>
+          </div>
+          <div class="patient">
+            <img src="imgs/patient-test.png" alt="">
+            <h3>Ahmed Mohsen</h3>
+            <span>On going</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let barIcon = document.querySelector(".bars");
+      let sidebar = document.querySelector("aside.sidebar");
+      barIcon.onclick = function () {
+        sidebar.classList.toggle("active");
+        this.classList.toggle("clicked")
+        document.body.classList.toggle("freeze");
+      }
+    </script>
+  </body>
+
+</html>
